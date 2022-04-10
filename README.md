@@ -3,11 +3,11 @@ Locomoive BASIC for Schneider CPC464: Reliable Mandelbrot set's exterior
 Using a fixed-point number type based on strings (sign, integer part, fractional part in radix 10), a point seed (complex number) or a seed being a complex interval (having area), the exterior of the classical Mandelbrot set z^2+c in the 2-square was reliably (interval arithmetics, outward rounding) computed using standard escape time with escape radius 10 .
 
 
-Escaped pixels (white) are truely, mathematically proven, escaping; gray, unclear pixel, but could escape in higher resolution or higher iterations, but might also be interior.
+Escaped pixels (white) are truely, mathematically proven, escaping; gray, unclear pixel, but could escape in higher resolution or higher iterations, but might also be interior. Blue pixels just denote a visual border region.
 
 Important variables:
-- ps% = 1 => point sampling, seeds are complex numbers;. Upper right pixel represents 2+2i, other pixels accordingly with grid width and height.
-- ps% = 0, seeds are complex intervals tiling the complex plane's 2-square. Upper right pixel represents the complex interval [2-width..2]+i*[2-height..2]
+- ps% = 1 => point sampling, seeds are complex numbers;. Upper right white pixel represents 2+2i, other pixels accordingly with grid width and height.
+- ps% = 0, seeds are complex intervals tiling the complex plane's 2-square. Upper right white pixel represents the complex interval [2-width..2]+i*[2-height..2]
 - maxit%=15: number of maximal iterations
 - xe%, ye% length of image. If this number is changed, the grid distances width (pixelw0s,0i$,0f$,1s,1i$,1f$) and height (accordingly) have to be adjusted manually.
 - fpf%,fpi%: number of fixed-point digits for the fractional and integer part.
