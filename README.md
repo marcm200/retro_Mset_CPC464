@@ -12,7 +12,7 @@ Important variables:
 - xe%, ye% length of image. If this number is changed, the grid distances width (pixelw0s,0i$,0f$,1s,1i$,1f$) and height (accordingly) have to be adjusted manually.
 - fpf%,fpi%: number of fixed-point digits for the fractional and integer part.
 
-Run on CPC emulator cpcemu v2.4 in real-speed emulation. A 50x50 image for  point seeds took 3 days, with interval seeeds 3.5 days.
+Run on CPC emulator cpcemu v2.4 in real-speed emulation. A 50x50 image for  point seeds took 3 days, with interval seeds 3.5 days.
 
 The code is not optimized (long variable names, not all variables set to the minimal type necessary, interval squaring is performed by interval multiplication, interval multiplication in some cases by optimized flow of calculations, but mostly with the general 8-product approach).
 
